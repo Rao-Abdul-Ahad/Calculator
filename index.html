@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+</head>
+
+<body >
+    <center>
+        <div>
+            <h1 class="h">Calculator</h1>
+        </div>
+        <div>
+            <input   class="form-control form-control-outline-primary" type="text" name="" id="inp">
+        </div>
+        <br>
+        <div>
+            <div>
+                <button  class="btn btn-outline-primary" onclick="dabaya(9)">9</button>
+                <button  class="btn btn-outline-success" onclick="dabaya(8)">8</button>
+                <button  class="btn btn-outline-light" onclick="dabaya(7)">7</button>
+                <button  class="btn btn-outline-danger" onclick="dabaya('+')">+</button>
+            </div>
+            <div>
+                <button  class="btn btn-outline-danger" onclick="dabaya(6)">6</button>
+                <button  class="btn btn-outline-warning" onclick="dabaya(5)">5</button>
+                <button  class="btn btn-outline-info" onclick="dabaya(4)">4</button>
+                <button type="button"  class="btn btn-outline-success" onclick="dabaya('-')">-</button>
+            </div>
+            <div>
+                <button  class="btn btn-outline-success" onclick="dabaya(3)">3</button>
+                <button  class="btn btn-outline-light" onclick="dabaya(2)">2</button>
+                <button  class="btn btn-outline-primary" onclick="dabaya(1)">1</button>
+                <button  class="btn btn-outline-warning" onclick="dabaya('/')">/</button>
+                
+            </div>
+            <div>
+                
+                <button  class="btn btn-outline-primary" onclick="dabaya('00')">00</button>
+                <button  class="btn btn-outline-warning " onclick="dabaya(0)">0</button>
+                <button  class="btn btn-outline-info " onclick="dabaya('%')">%</button>
+                <button  class="btn btn-outline-danger " onclick="dabaya('*')">*</button>
+                
+            </div>
+            <div>
+                
+                <button class="btn btn-outline-danger" onclick="clr()">Clear</button>
+                <button class="btn btn-outline-success" onclick="clra()">Clear All</button>
+                <button  class="btn btn-outline-success" onclick="sol()">=</button>
+                <button class="btn btn-black"></button>
+                
+            </div>
+        </div>
+    </center>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+/* style.css */
+
+/* Base Styles */
+body {
+    background: linear-gradient(to right, rgb(51, 49, 49), #2c2828);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    
+    height: 100vh;
+}
+
+.h{
+    color: #a8a5a5;
+    margin-bottom: 20px;
+}
+.h:hover{
+    color: #ffffff;
+    background-color: #787474;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Calculator Container */
+.center > div {
+    background-color: #ffffffcc;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 90%;
+    box-sizing: border-box;
+}
+
+/* Input Field */
+.form-control-outline-primary {
+    
+    background-color: #fce4ec; /* Light pink background */
+    
+    width: 40%;
+    height: 40px;
+    font-size: 24px;
+    text-align: left;
+    border: solid 1px #0655a5;
+    color: #007bff;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Buttons */
+button {
+    width: 70px;
+    height: 60px;
+    font-size: 22px;
+    margin: 5px;
+    border-radius: 10px !important;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    opacity: 0.95;
+}
+
+.btn-dark {
+    background-color: #343a40 !important;
+    color: white;
+}
+
+.btn-danger {
+    background-color: #dc3545 !important;
+}
+
+.btn-primary {
+    background-color: #007bff !important;
+}
+
+/* Button Container */
+.center > div > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Remove button outline on click */
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    button {
+        width: 60px;
+        height: 50px;
+        font-size: 18px;
+        margin: 4px;
+    }
+
+    .inp {
+        height: 50px;
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+
+
+.form-control-outline-primary:focus {
+    outline: none;
+    border-color: #0a58ca; /* Slightly darker on focus */
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+.form-control-outline-primary:hover{
+    background-color:#0d6efd ;
+    border: #0d6efd;
+    height: 45px;
+    transition: background-color 0.4s, color 0.4s;
+    color: #0d6efd;
+}
